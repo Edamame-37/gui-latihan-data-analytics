@@ -209,9 +209,13 @@ class PracticeFrame(ctk.CTkFrame):
             elif isinstance(obj, dict):
                 return {k.lower(): normalize(v) for k, v in obj.items()}
             elif isinstance(obj, float) or isinstance(obj, int):
-                return str(round(float(obj), 2))
+                return round(float(obj), 2)
             else:
-                return str(obj).strip().lower()
+                s = str(obj).strip().lower()
+                try:
+                    return round(float(s), 2)
+                except ValueError:
+                    return s
 
         try:
             norm_user = normalize(user_json)

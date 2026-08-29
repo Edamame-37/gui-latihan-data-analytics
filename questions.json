@@ -57,7 +57,7 @@
                 "price": 4705919.21
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 2,
@@ -117,7 +117,7 @@
                 "city": "Jakarta"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 3,
@@ -167,7 +167,7 @@
                 "base_salary": 12714365.83
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 4,
@@ -227,7 +227,7 @@
                 "status": "Pending"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 5,
@@ -241,7 +241,7 @@
                 "department_name": "IT"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 6,
@@ -271,7 +271,7 @@
                 "title_name": "Senior Specialist"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 7,
@@ -293,7 +293,7 @@
                 "price": 26453.65
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 8,
@@ -353,7 +353,7 @@
                 "comment": "Sesuai ekspektasi"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 9,
@@ -403,7 +403,7 @@
                 "email": "supplier10@supp.com"
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 10,
@@ -417,7 +417,7 @@
                 "base_cost": 25000
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 11,
@@ -467,7 +467,7 @@
                 "total_emp": 6
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 12,
@@ -537,7 +537,7 @@
                 "total_stock": 6515
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 13,
@@ -623,7 +623,7 @@
                 "avg_salary": 13631586.88
             }
         ],
-        "solved": false
+        "solved": true
     },
     {
         "id": 14,
