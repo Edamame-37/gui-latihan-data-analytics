@@ -33,6 +33,15 @@ A modern desktop application built with Python and CustomTkinter to help you pra
    pip install customtkinter pillow
    ```
 
+3. **Setup Progress Tracking (Optional)**:
+   The application tracks your solved questions locally in a `progress.json` file (ignored by Git). If you are setting this up for the first time, the application will automatically create it for you upon your first correct answer. 
+   Alternatively, you can manually create `progress.json` in the root folder with the following format:
+   ```json
+   {
+       "solved_ids": [1, 2, 3]
+   }
+   ```
+
 ## How to Use
 
 1. Launch the application:
