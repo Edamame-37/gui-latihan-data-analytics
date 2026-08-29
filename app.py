@@ -34,13 +34,24 @@ class SQLPracticeApp(ctk.CTk):
         self.geometry("1100x750")
         
         self.q_file = "questions.json"
+        self.p_file = "progress.json"
+        
         if not os.path.exists(self.q_file):
-            messagebox.showerror("Error", "questions.json tidak ditemukan. Jalankan generate_qa.py terlebih dahulu.")
+            messagebox.showerror("Error", "questions.json tidak ditemukan.")
             self.destroy()
             return
             
         with open(self.q_file, 'r', encoding='utf-8') as f:
             self.questions = json.load(f)
+            
+        self.solved_ids = []
+        if os.path.exists(self.p_file):
+            with open(self.p_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                self.solved_ids = data.get("solved_ids", [])
+                
+        for q in self.questions:
+            q["solved"] = (q["id"] in self.solved_ids)
             
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -63,12 +74,16 @@ class SQLPracticeApp(ctk.CTk):
         self.practice_frame.grid(row=0, column=0, sticky="nsew")
         
     def save_progress(self, q_id):
+        if q_id not in self.solved_ids:
+            self.solved_ids.append(q_id)
+            
         for q in self.questions:
             if q["id"] == q_id:
                 q["solved"] = True
                 break
-        with open(self.q_file, 'w', encoding='utf-8') as f:
-            json.dump(self.questions, f, indent=4)
+                
+        with open(self.p_file, 'w', encoding='utf-8') as f:
+            json.dump({"solved_ids": self.solved_ids}, f, indent=4)
 
 
 class DashboardFrame(ctk.CTkScrollableFrame):
