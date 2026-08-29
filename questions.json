@@ -1,0 +1,2440 @@
+[
+    {
+        "id": 1,
+        "title": "Daftar 10 Produk",
+        "difficulty": "Easy",
+        "description": "Tampilkan product_id, product_name, dan price dari 10 produk dengan urutan product_id.",
+        "query_hints": "SELECT product_id, product_name, price FROM products ORDER BY product_id LIMIT 10;",
+        "expected_json": [
+            {
+                "product_id": 1,
+                "product_name": "Product 1",
+                "price": 4077586.61
+            },
+            {
+                "product_id": 2,
+                "product_name": "Product 2",
+                "price": 2858457.74
+            },
+            {
+                "product_id": 3,
+                "product_name": "Product 3",
+                "price": 1304174.08
+            },
+            {
+                "product_id": 4,
+                "product_name": "Product 4",
+                "price": 1323937.33
+            },
+            {
+                "product_id": 5,
+                "product_name": "Product 5",
+                "price": 2828625.79
+            },
+            {
+                "product_id": 6,
+                "product_name": "Product 6",
+                "price": 1488086.04
+            },
+            {
+                "product_id": 7,
+                "product_name": "Product 7",
+                "price": 4866626.38
+            },
+            {
+                "product_id": 8,
+                "product_name": "Product 8",
+                "price": 4078499.63
+            },
+            {
+                "product_id": 9,
+                "product_name": "Product 9",
+                "price": 202538.13
+            },
+            {
+                "product_id": 10,
+                "product_name": "Product 10",
+                "price": 4705919.21
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 2,
+        "title": "Pelanggan dari Jakarta",
+        "difficulty": "Easy",
+        "description": "Tampilkan customer_id, address_line, city untuk alamat di 'Jakarta' (limit 10).",
+        "query_hints": "SELECT customer_id, address_line, city FROM customer_addresses WHERE city = 'Jakarta' LIMIT 10;",
+        "expected_json": [
+            {
+                "customer_id": 3,
+                "address_line": "Jl. Jend. Sudirman No 19",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 10,
+                "address_line": "Jl. Jend. Sudirman No 36",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 35,
+                "address_line": "Jl. Jend. Sudirman No 87",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 45,
+                "address_line": "Jl. Jend. Sudirman No 83",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 49,
+                "address_line": "Jl. Jend. Sudirman No 73",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 60,
+                "address_line": "Jl. Jend. Sudirman No 17",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 60,
+                "address_line": "Jl. Gatot Subroto No 46",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 65,
+                "address_line": "Jl. Jend. Sudirman No 30",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 84,
+                "address_line": "Jl. Jend. Sudirman No 61",
+                "city": "Jakarta"
+            },
+            {
+                "customer_id": 84,
+                "address_line": "Jl. Gatot Subroto No 1",
+                "city": "Jakarta"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 3,
+        "title": "Gaji Besar",
+        "difficulty": "Easy",
+        "description": "Tampilkan employee_id, base_salary untuk gaji > 10.000.000 (limit 10).",
+        "query_hints": "SELECT employee_id, base_salary FROM employee_salaries WHERE base_salary > 10000000 LIMIT 10;",
+        "expected_json": [
+            {
+                "employee_id": 1,
+                "base_salary": 14791838.35
+            },
+            {
+                "employee_id": 2,
+                "base_salary": 16928165.03
+            },
+            {
+                "employee_id": 2,
+                "base_salary": 18620981.53
+            },
+            {
+                "employee_id": 3,
+                "base_salary": 10434571.58
+            },
+            {
+                "employee_id": 3,
+                "base_salary": 11478028.74
+            },
+            {
+                "employee_id": 4,
+                "base_salary": 18378904.05
+            },
+            {
+                "employee_id": 5,
+                "base_salary": 13545682.94
+            },
+            {
+                "employee_id": 5,
+                "base_salary": 14900251.23
+            },
+            {
+                "employee_id": 6,
+                "base_salary": 17384901.26
+            },
+            {
+                "employee_id": 8,
+                "base_salary": 12714365.83
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 4,
+        "title": "Pesanan Pending",
+        "difficulty": "Easy",
+        "description": "Tampilkan order_id, order_date, status untuk pesanan berstatus 'Pending' (limit 10).",
+        "query_hints": "SELECT order_id, order_date, status FROM orders WHERE status = 'Pending' LIMIT 10;",
+        "expected_json": [
+            {
+                "order_id": 2,
+                "order_date": "2025-10-31",
+                "status": "Pending"
+            },
+            {
+                "order_id": 9,
+                "order_date": "2024-07-06",
+                "status": "Pending"
+            },
+            {
+                "order_id": 19,
+                "order_date": "2023-03-21",
+                "status": "Pending"
+            },
+            {
+                "order_id": 25,
+                "order_date": "2025-04-08",
+                "status": "Pending"
+            },
+            {
+                "order_id": 31,
+                "order_date": "2023-11-20",
+                "status": "Pending"
+            },
+            {
+                "order_id": 36,
+                "order_date": "2023-07-04",
+                "status": "Pending"
+            },
+            {
+                "order_id": 64,
+                "order_date": "2024-06-01",
+                "status": "Pending"
+            },
+            {
+                "order_id": 76,
+                "order_date": "2024-06-27",
+                "status": "Pending"
+            },
+            {
+                "order_id": 88,
+                "order_date": "2024-02-10",
+                "status": "Pending"
+            },
+            {
+                "order_id": 115,
+                "order_date": "2024-01-03",
+                "status": "Pending"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 5,
+        "title": "Departemen IT",
+        "difficulty": "Easy",
+        "description": "Tampilkan department_id, department_name yang bernama 'IT'.",
+        "query_hints": "SELECT department_id, department_name FROM departments WHERE department_name = 'IT';",
+        "expected_json": [
+            {
+                "department_id": 2,
+                "department_name": "IT"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 6,
+        "title": "Jabatan Senior",
+        "difficulty": "Easy",
+        "description": "Tampilkan job_title_id, title_name dari level 'Senior'.",
+        "query_hints": "SELECT job_title_id, title_name FROM job_titles WHERE level = 'Senior';",
+        "expected_json": [
+            {
+                "job_title_id": 3,
+                "title_name": "Senior Manager"
+            },
+            {
+                "job_title_id": 7,
+                "title_name": "Senior Staff"
+            },
+            {
+                "job_title_id": 11,
+                "title_name": "Senior Director"
+            },
+            {
+                "job_title_id": 15,
+                "title_name": "Senior Analyst"
+            },
+            {
+                "job_title_id": 19,
+                "title_name": "Senior Specialist"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 7,
+        "title": "Produk Murah",
+        "difficulty": "Easy",
+        "description": "Tampilkan product_name, price yang price < 50000 (limit 10).",
+        "query_hints": "SELECT product_name, price FROM products WHERE price < 50000 LIMIT 10;",
+        "expected_json": [
+            {
+                "product_name": "Product 31",
+                "price": 38492.2
+            },
+            {
+                "product_name": "Product 89",
+                "price": 22576.48
+            },
+            {
+                "product_name": "Product 162",
+                "price": 26453.65
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 8,
+        "title": "Ulasan Bintang 5",
+        "difficulty": "Easy",
+        "description": "Tampilkan review_id, rating, comment untuk rating = 5 (limit 10).",
+        "query_hints": "SELECT review_id, rating, comment FROM reviews WHERE rating = 5 LIMIT 10;",
+        "expected_json": [
+            {
+                "review_id": 3,
+                "rating": 5,
+                "comment": "Pengiriman cepat"
+            },
+            {
+                "review_id": 5,
+                "rating": 5,
+                "comment": "Buruk sekali"
+            },
+            {
+                "review_id": 17,
+                "rating": 5,
+                "comment": "Bagus!"
+            },
+            {
+                "review_id": 33,
+                "rating": 5,
+                "comment": "Lumayan"
+            },
+            {
+                "review_id": 35,
+                "rating": 5,
+                "comment": "Pengiriman cepat"
+            },
+            {
+                "review_id": 47,
+                "rating": 5,
+                "comment": "Sesuai ekspektasi"
+            },
+            {
+                "review_id": 48,
+                "rating": 5,
+                "comment": "Lumayan"
+            },
+            {
+                "review_id": 49,
+                "rating": 5,
+                "comment": "Bagus!"
+            },
+            {
+                "review_id": 57,
+                "rating": 5,
+                "comment": "Lumayan"
+            },
+            {
+                "review_id": 58,
+                "rating": 5,
+                "comment": "Sesuai ekspektasi"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 9,
+        "title": "Info Supplier",
+        "difficulty": "Easy",
+        "description": "Tampilkan company_name, email dari semua supplier (limit 10).",
+        "query_hints": "SELECT company_name, email FROM suppliers LIMIT 10;",
+        "expected_json": [
+            {
+                "company_name": "Supplier PT 1",
+                "email": "supplier1@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 2",
+                "email": "supplier2@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 3",
+                "email": "supplier3@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 4",
+                "email": "supplier4@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 5",
+                "email": "supplier5@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 6",
+                "email": "supplier6@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 7",
+                "email": "supplier7@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 8",
+                "email": "supplier8@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 9",
+                "email": "supplier9@supp.com"
+            },
+            {
+                "company_name": "Supplier PT 10",
+                "email": "supplier10@supp.com"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 10,
+        "title": "Biaya Kirim Express",
+        "difficulty": "Easy",
+        "description": "Tampilkan method_name, base_cost untuk nama 'Express'.",
+        "query_hints": "SELECT method_name, base_cost FROM shipping_methods WHERE method_name = 'Express';",
+        "expected_json": [
+            {
+                "method_name": "Express",
+                "base_cost": 25000
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 11,
+        "title": "Total Karyawan per Departemen",
+        "difficulty": "Medium",
+        "description": "Tampilkan department_name (tabel departments) dan total_emp (jumlah karyawan dari tabel employees) untuk tiap departemen. Urutkan dari total karyawan terbanyak.",
+        "query_hints": "SELECT d.department_name, COUNT(e.employee_id) as total_emp FROM departments d JOIN employees e ON d.department_id = e.department_id GROUP BY d.department_name ORDER BY total_emp DESC;",
+        "expected_json": [
+            {
+                "department_name": "Finance",
+                "total_emp": 16
+            },
+            {
+                "department_name": "Legal",
+                "total_emp": 13
+            },
+            {
+                "department_name": "Operations",
+                "total_emp": 11
+            },
+            {
+                "department_name": "IT",
+                "total_emp": 11
+            },
+            {
+                "department_name": "Customer Support",
+                "total_emp": 11
+            },
+            {
+                "department_name": "Logistics",
+                "total_emp": 10
+            },
+            {
+                "department_name": "Marketing",
+                "total_emp": 9
+            },
+            {
+                "department_name": "HR",
+                "total_emp": 7
+            },
+            {
+                "department_name": "Sales",
+                "total_emp": 6
+            },
+            {
+                "department_name": "R&D",
+                "total_emp": 6
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 12,
+        "title": "Stok per Kategori",
+        "difficulty": "Medium",
+        "description": "Tampilkan category_name dan total_stock (total dari stock_quantity) per kategori produk.",
+        "query_hints": "SELECT c.category_name, SUM(p.stock_quantity) as total_stock FROM product_categories c JOIN products p ON c.category_id = p.category_id GROUP BY c.category_name;",
+        "expected_json": [
+            {
+                "category_name": "Automotive",
+                "total_stock": 7038
+            },
+            {
+                "category_name": "Beauty",
+                "total_stock": 7442
+            },
+            {
+                "category_name": "Books",
+                "total_stock": 4996
+            },
+            {
+                "category_name": "Clothing",
+                "total_stock": 6762
+            },
+            {
+                "category_name": "Electronics",
+                "total_stock": 7732
+            },
+            {
+                "category_name": "Food",
+                "total_stock": 7533
+            },
+            {
+                "category_name": "Health",
+                "total_stock": 6060
+            },
+            {
+                "category_name": "Home & Garden",
+                "total_stock": 9791
+            },
+            {
+                "category_name": "Industrial",
+                "total_stock": 4952
+            },
+            {
+                "category_name": "Movies",
+                "total_stock": 6307
+            },
+            {
+                "category_name": "Music",
+                "total_stock": 3440
+            },
+            {
+                "category_name": "Office Products",
+                "total_stock": 6584
+            },
+            {
+                "category_name": "Pet Supplies",
+                "total_stock": 6570
+            },
+            {
+                "category_name": "Sports",
+                "total_stock": 9440
+            },
+            {
+                "category_name": "Toys",
+                "total_stock": 6515
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 13,
+        "title": "Rata-rata Gaji per Jabatan",
+        "difficulty": "Medium",
+        "description": "Tampilkan title_name dan avg_salary (rata-rata base_salary di-round 2 desimal).",
+        "query_hints": "SELECT j.title_name, ROUND(AVG(s.base_salary), 2) as avg_salary FROM job_titles j JOIN employees e ON j.job_title_id = e.job_title_id JOIN employee_salaries s ON e.employee_id = s.employee_id GROUP BY j.title_name;",
+        "expected_json": [
+            {
+                "title_name": "Junior Analyst",
+                "avg_salary": 13701949.27
+            },
+            {
+                "title_name": "Junior Director",
+                "avg_salary": 8904805.13
+            },
+            {
+                "title_name": "Junior Manager",
+                "avg_salary": 16170188.54
+            },
+            {
+                "title_name": "Junior Specialist",
+                "avg_salary": 14302099.94
+            },
+            {
+                "title_name": "Junior Staff",
+                "avg_salary": 15380853.13
+            },
+            {
+                "title_name": "Lead Director",
+                "avg_salary": 7782725.01
+            },
+            {
+                "title_name": "Lead Manager",
+                "avg_salary": 13461849.4
+            },
+            {
+                "title_name": "Lead Specialist",
+                "avg_salary": 10177535.19
+            },
+            {
+                "title_name": "Lead Staff",
+                "avg_salary": 18296088.48
+            },
+            {
+                "title_name": "Mid Analyst",
+                "avg_salary": 11436702.45
+            },
+            {
+                "title_name": "Mid Director",
+                "avg_salary": 15949233.4
+            },
+            {
+                "title_name": "Mid Manager",
+                "avg_salary": 11788855.8
+            },
+            {
+                "title_name": "Mid Specialist",
+                "avg_salary": 12728151.71
+            },
+            {
+                "title_name": "Mid Staff",
+                "avg_salary": 11152592.56
+            },
+            {
+                "title_name": "Senior Analyst",
+                "avg_salary": 11529872.33
+            },
+            {
+                "title_name": "Senior Director",
+                "avg_salary": 13061706.81
+            },
+            {
+                "title_name": "Senior Manager",
+                "avg_salary": 12360551.73
+            },
+            {
+                "title_name": "Senior Specialist",
+                "avg_salary": 14222967.09
+            },
+            {
+                "title_name": "Senior Staff",
+                "avg_salary": 13631586.88
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 14,
+        "title": "Total Pendapatan per Status",
+        "difficulty": "Medium",
+        "description": "Tampilkan status pesanan dan total_rev (jumlah dari total_amount) dari tabel orders.",
+        "query_hints": "SELECT status, SUM(total_amount) as total_rev FROM orders GROUP BY status;",
+        "expected_json": [
+            {
+                "status": "Cancelled",
+                "total_rev": 505943826.12
+            },
+            {
+                "status": "Delivered",
+                "total_rev": 500529393.11
+            },
+            {
+                "status": "Pending",
+                "total_rev": 447245493.85
+            },
+            {
+                "status": "Processing",
+                "total_rev": 399645228.11
+            },
+            {
+                "status": "Shipped",
+                "total_rev": 469099820.63
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 15,
+        "title": "Pesanan Pelanggan",
+        "difficulty": "Medium",
+        "description": "Tampilkan first_name, last_name (dari customers) dan order_id, total_amount (dari orders) (limit 10).",
+        "query_hints": "SELECT c.first_name, c.last_name, o.order_id, o.total_amount FROM customers c JOIN orders o ON c.customer_id = o.customer_id LIMIT 10;",
+        "expected_json": [
+            {
+                "first_name": "Joko",
+                "last_name": "Pratama",
+                "order_id": 1,
+                "total_amount": 3664720.03
+            },
+            {
+                "first_name": "Dewi",
+                "last_name": "Kurniawan",
+                "order_id": 2,
+                "total_amount": 5595925.47
+            },
+            {
+                "first_name": "Ari",
+                "last_name": "Kurniawan",
+                "order_id": 3,
+                "total_amount": 4494626.1
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Halim",
+                "order_id": 4,
+                "total_amount": 8728508.37
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Santoso",
+                "order_id": 5,
+                "total_amount": 2608963.04
+            },
+            {
+                "first_name": "Sri",
+                "last_name": "Hidayat",
+                "order_id": 6,
+                "total_amount": 1098671.14
+            },
+            {
+                "first_name": "Maya",
+                "last_name": "Halim",
+                "order_id": 7,
+                "total_amount": 4408588.9
+            },
+            {
+                "first_name": "Ari",
+                "last_name": "Pratama",
+                "order_id": 8,
+                "total_amount": 3950904.59
+            },
+            {
+                "first_name": "Yanto",
+                "last_name": "Saputra",
+                "order_id": 9,
+                "total_amount": 4655835.88
+            },
+            {
+                "first_name": "Ari",
+                "last_name": "Suryono",
+                "order_id": 10,
+                "total_amount": 1954359.95
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 16,
+        "title": "Top 5 Supplier",
+        "difficulty": "Medium",
+        "description": "Tampilkan company_name dan product_count (jumlah produk). Urutkan dari produk terbanyak (limit 5).",
+        "query_hints": "SELECT s.company_name, COUNT(p.product_id) as product_count FROM suppliers s JOIN products p ON s.supplier_id = p.supplier_id GROUP BY s.company_name ORDER BY product_count DESC LIMIT 5;",
+        "expected_json": [
+            {
+                "company_name": "Supplier PT 17",
+                "product_count": 12
+            },
+            {
+                "company_name": "Supplier PT 5",
+                "product_count": 10
+            },
+            {
+                "company_name": "Supplier PT 26",
+                "product_count": 10
+            },
+            {
+                "company_name": "Supplier PT 13",
+                "product_count": 10
+            },
+            {
+                "company_name": "Supplier PT 30",
+                "product_count": 9
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 17,
+        "title": "Rating Rata-rata Produk",
+        "difficulty": "Medium",
+        "description": "Tampilkan product_name dan avg_rating (dari reviews, round 1 desimal). Tampilkan 10 teratas urut id.",
+        "query_hints": "SELECT p.product_name, ROUND(AVG(r.rating), 1) as avg_rating FROM products p JOIN reviews r ON p.product_id = r.product_id GROUP BY p.product_name ORDER BY p.product_name LIMIT 10;",
+        "expected_json": [
+            {
+                "product_name": "Product 1",
+                "avg_rating": 3.0
+            },
+            {
+                "product_name": "Product 10",
+                "avg_rating": 1.7
+            },
+            {
+                "product_name": "Product 100",
+                "avg_rating": 2.5
+            },
+            {
+                "product_name": "Product 101",
+                "avg_rating": 2.2
+            },
+            {
+                "product_name": "Product 102",
+                "avg_rating": 4.0
+            },
+            {
+                "product_name": "Product 103",
+                "avg_rating": 1.7
+            },
+            {
+                "product_name": "Product 104",
+                "avg_rating": 1.0
+            },
+            {
+                "product_name": "Product 105",
+                "avg_rating": 4.0
+            },
+            {
+                "product_name": "Product 106",
+                "avg_rating": 4.0
+            },
+            {
+                "product_name": "Product 109",
+                "avg_rating": 1.0
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 18,
+        "title": "Hitung Invoice Lunas",
+        "difficulty": "Medium",
+        "description": "Tampilkan status invoice dan total_invoices (jumlah kemunculan).",
+        "query_hints": "SELECT status, COUNT(invoice_id) as total_invoices FROM invoices GROUP BY status;",
+        "expected_json": [
+            {
+                "status": "Cancelled",
+                "total_invoices": 111
+            },
+            {
+                "status": "Paid",
+                "total_invoices": 107
+            },
+            {
+                "status": "Unpaid",
+                "total_invoices": 282
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 19,
+        "title": "Jumlah Item per Pesanan",
+        "difficulty": "Medium",
+        "description": "Tampilkan order_id dan total_items (jumlah total quantity). Urutkan dari order_id (limit 10).",
+        "query_hints": "SELECT order_id, SUM(quantity) as total_items FROM order_items GROUP BY order_id ORDER BY order_id LIMIT 10;",
+        "expected_json": [
+            {
+                "order_id": 1,
+                "total_items": 10
+            },
+            {
+                "order_id": 2,
+                "total_items": 13
+            },
+            {
+                "order_id": 3,
+                "total_items": 5
+            },
+            {
+                "order_id": 4,
+                "total_items": 18
+            },
+            {
+                "order_id": 5,
+                "total_items": 8
+            },
+            {
+                "order_id": 6,
+                "total_items": 3
+            },
+            {
+                "order_id": 7,
+                "total_items": 10
+            },
+            {
+                "order_id": 8,
+                "total_items": 8
+            },
+            {
+                "order_id": 9,
+                "total_items": 10
+            },
+            {
+                "order_id": 10,
+                "total_items": 5
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 20,
+        "title": "Penggunaan Metode Kirim",
+        "difficulty": "Medium",
+        "description": "Tampilkan method_name dan usage_count (berapa kali dipakai di tabel orders).",
+        "query_hints": "SELECT m.method_name, COUNT(o.order_id) as usage_count FROM shipping_methods m JOIN orders o ON m.method_id = o.method_id GROUP BY m.method_name;",
+        "expected_json": [
+            {
+                "method_name": "Economy",
+                "usage_count": 98
+            },
+            {
+                "method_name": "Express",
+                "usage_count": 99
+            },
+            {
+                "method_name": "International",
+                "usage_count": 93
+            },
+            {
+                "method_name": "Same Day",
+                "usage_count": 95
+            },
+            {
+                "method_name": "Standard",
+                "usage_count": 115
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 21,
+        "title": "Pelanggan Tanpa Pesanan",
+        "difficulty": "Hard",
+        "description": "Tampilkan customer_id dan first_name dari pelanggan yang belum pernah melakukan pesanan (Gunakan LEFT JOIN).",
+        "query_hints": "SELECT c.customer_id, c.first_name FROM customers c LEFT JOIN orders o ON c.customer_id = o.customer_id WHERE o.order_id IS NULL;",
+        "expected_json": [
+            {
+                "customer_id": 6,
+                "first_name": "Dewi"
+            },
+            {
+                "customer_id": 10,
+                "first_name": "Rina"
+            },
+            {
+                "customer_id": 17,
+                "first_name": "Maya"
+            },
+            {
+                "customer_id": 19,
+                "first_name": "Rudi"
+            },
+            {
+                "customer_id": 26,
+                "first_name": "Dedi"
+            },
+            {
+                "customer_id": 33,
+                "first_name": "Yanto"
+            },
+            {
+                "customer_id": 46,
+                "first_name": "Nina"
+            },
+            {
+                "customer_id": 51,
+                "first_name": "Sri"
+            },
+            {
+                "customer_id": 53,
+                "first_name": "Joko"
+            },
+            {
+                "customer_id": 55,
+                "first_name": "Eko"
+            },
+            {
+                "customer_id": 62,
+                "first_name": "Agus"
+            },
+            {
+                "customer_id": 69,
+                "first_name": "Rudi"
+            },
+            {
+                "customer_id": 72,
+                "first_name": "Agus"
+            },
+            {
+                "customer_id": 84,
+                "first_name": "Lestari"
+            },
+            {
+                "customer_id": 87,
+                "first_name": "Siti"
+            },
+            {
+                "customer_id": 89,
+                "first_name": "Ani"
+            },
+            {
+                "customer_id": 97,
+                "first_name": "Ari"
+            },
+            {
+                "customer_id": 105,
+                "first_name": "Nina"
+            },
+            {
+                "customer_id": 106,
+                "first_name": "Ani"
+            },
+            {
+                "customer_id": 109,
+                "first_name": "Sri"
+            },
+            {
+                "customer_id": 111,
+                "first_name": "Rina"
+            },
+            {
+                "customer_id": 113,
+                "first_name": "Dewi"
+            },
+            {
+                "customer_id": 119,
+                "first_name": "Joko"
+            },
+            {
+                "customer_id": 124,
+                "first_name": "Agus"
+            },
+            {
+                "customer_id": 130,
+                "first_name": "Andi"
+            },
+            {
+                "customer_id": 133,
+                "first_name": "Putri"
+            },
+            {
+                "customer_id": 135,
+                "first_name": "Ari"
+            },
+            {
+                "customer_id": 136,
+                "first_name": "Agus"
+            },
+            {
+                "customer_id": 138,
+                "first_name": "Yanto"
+            },
+            {
+                "customer_id": 146,
+                "first_name": "Lestari"
+            },
+            {
+                "customer_id": 153,
+                "first_name": "Andi"
+            },
+            {
+                "customer_id": 161,
+                "first_name": "Rina"
+            },
+            {
+                "customer_id": 172,
+                "first_name": "Sari"
+            },
+            {
+                "customer_id": 173,
+                "first_name": "Hadi"
+            },
+            {
+                "customer_id": 174,
+                "first_name": "Sari"
+            },
+            {
+                "customer_id": 175,
+                "first_name": "Andi"
+            },
+            {
+                "customer_id": 182,
+                "first_name": "Dewi"
+            },
+            {
+                "customer_id": 185,
+                "first_name": "Dedi"
+            },
+            {
+                "customer_id": 224,
+                "first_name": "Ani"
+            },
+            {
+                "customer_id": 236,
+                "first_name": "Hadi"
+            },
+            {
+                "customer_id": 237,
+                "first_name": "Andi"
+            },
+            {
+                "customer_id": 252,
+                "first_name": "Sari"
+            },
+            {
+                "customer_id": 257,
+                "first_name": "Budi"
+            },
+            {
+                "customer_id": 264,
+                "first_name": "Hadi"
+            },
+            {
+                "customer_id": 266,
+                "first_name": "Rudi"
+            },
+            {
+                "customer_id": 272,
+                "first_name": "Hadi"
+            },
+            {
+                "customer_id": 274,
+                "first_name": "Hadi"
+            },
+            {
+                "customer_id": 279,
+                "first_name": "Andi"
+            },
+            {
+                "customer_id": 280,
+                "first_name": "Sari"
+            },
+            {
+                "customer_id": 282,
+                "first_name": "Sari"
+            },
+            {
+                "customer_id": 288,
+                "first_name": "Ari"
+            },
+            {
+                "customer_id": 290,
+                "first_name": "Rina"
+            },
+            {
+                "customer_id": 293,
+                "first_name": "Sari"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 22,
+        "title": "Produk Tak Terjual",
+        "difficulty": "Hard",
+        "description": "Tampilkan product_id dan product_name dari produk yang tidak ada di order_items.",
+        "query_hints": "SELECT p.product_id, p.product_name FROM products p LEFT JOIN order_items oi ON p.product_id = oi.product_id WHERE oi.order_id IS NULL;",
+        "expected_json": [],
+        "solved": false
+    },
+    {
+        "id": 23,
+        "title": "Karyawan Gaji Tertinggi",
+        "difficulty": "Hard",
+        "description": "Tampilkan first_name, last_name, base_salary untuk karyawan yang memiliki gaji pokok (base_salary) terbesar. (Gunakan Subquery).",
+        "query_hints": "SELECT e.first_name, e.last_name, s.base_salary FROM employees e JOIN employee_salaries s ON e.employee_id = s.employee_id WHERE s.base_salary = (SELECT MAX(base_salary) FROM employee_salaries);",
+        "expected_json": [
+            {
+                "first_name": "Ari",
+                "last_name": "Suryono",
+                "base_salary": 21890730.94
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 24,
+        "title": "Pesanan Paling Mahal",
+        "difficulty": "Hard",
+        "description": "Tampilkan order_id, first_name pelanggan, dan total_amount untuk pesanan dengan total_amount tertinggi.",
+        "query_hints": "SELECT o.order_id, c.first_name, o.total_amount FROM orders o JOIN customers c ON o.customer_id = c.customer_id WHERE o.total_amount = (SELECT MAX(total_amount) FROM orders);",
+        "expected_json": [
+            {
+                "order_id": 457,
+                "first_name": "Putri",
+                "total_amount": 15898279.59
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 25,
+        "title": "Kategori Mahal",
+        "difficulty": "Hard",
+        "description": "Tampilkan category_name dan avg_price (rata-rata harga produk di kategori tsb). Hanya tampilkan jika avg_price > 1000000.",
+        "query_hints": "SELECT c.category_name, ROUND(AVG(p.price), 2) as avg_price FROM product_categories c JOIN products p ON c.category_id = p.category_id GROUP BY c.category_name HAVING AVG(p.price) > 1000000;",
+        "expected_json": [
+            {
+                "category_name": "Automotive",
+                "avg_price": 2606477.36
+            },
+            {
+                "category_name": "Beauty",
+                "avg_price": 1964979.36
+            },
+            {
+                "category_name": "Books",
+                "avg_price": 2308577.81
+            },
+            {
+                "category_name": "Clothing",
+                "avg_price": 3097453.43
+            },
+            {
+                "category_name": "Electronics",
+                "avg_price": 2384755.9
+            },
+            {
+                "category_name": "Food",
+                "avg_price": 2729747.42
+            },
+            {
+                "category_name": "Health",
+                "avg_price": 2882035.2
+            },
+            {
+                "category_name": "Home & Garden",
+                "avg_price": 2139580.78
+            },
+            {
+                "category_name": "Industrial",
+                "avg_price": 1858681.23
+            },
+            {
+                "category_name": "Movies",
+                "avg_price": 3018266.77
+            },
+            {
+                "category_name": "Music",
+                "avg_price": 2285142.69
+            },
+            {
+                "category_name": "Office Products",
+                "avg_price": 2479408.15
+            },
+            {
+                "category_name": "Pet Supplies",
+                "avg_price": 2649580.69
+            },
+            {
+                "category_name": "Sports",
+                "avg_price": 2773501.63
+            },
+            {
+                "category_name": "Toys",
+                "avg_price": 2342401.14
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 26,
+        "title": "Total Pembayaran per Metode",
+        "difficulty": "Hard",
+        "description": "Tampilkan payment_method dan total_paid dari tabel payments.",
+        "query_hints": "SELECT payment_method, SUM(amount) as total_paid FROM payments GROUP BY payment_method;",
+        "expected_json": [
+            {
+                "payment_method": "Bank Transfer",
+                "total_paid": 148161066.97
+            },
+            {
+                "payment_method": "Credit Card",
+                "total_paid": 172385374.48
+            },
+            {
+                "payment_method": "E-Wallet",
+                "total_paid": 179982951.66
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 27,
+        "title": "Pelanggan Kecewa (Bintang 1)",
+        "difficulty": "Hard",
+        "description": "Tampilkan secara unik (DISTINCT) first_name dan last_name dari pelanggan yang pernah memberi review bintang 1.",
+        "query_hints": "SELECT DISTINCT c.first_name, c.last_name FROM customers c JOIN reviews r ON c.customer_id = r.customer_id WHERE r.rating = 1;",
+        "expected_json": [
+            {
+                "first_name": "Agus",
+                "last_name": "Santoso"
+            },
+            {
+                "first_name": "Yanto",
+                "last_name": "Saputra"
+            },
+            {
+                "first_name": "Ari",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Budi",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Agus",
+                "last_name": "Kurniawan"
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Yanto",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Kurniawan"
+            },
+            {
+                "first_name": "Andi",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Joko",
+                "last_name": "Saputra"
+            },
+            {
+                "first_name": "Dewi",
+                "last_name": "Saputra"
+            },
+            {
+                "first_name": "Budi",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Dewi",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Santoso"
+            },
+            {
+                "first_name": "Agus",
+                "last_name": "Nugroho"
+            },
+            {
+                "first_name": "Rina",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Hadi",
+                "last_name": "Santoso"
+            },
+            {
+                "first_name": "Andi",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Lestari",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Andi",
+                "last_name": "Wijaya"
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Sri",
+                "last_name": "Saputra"
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Nina",
+                "last_name": "Nugroho"
+            },
+            {
+                "first_name": "Hadi",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Nina",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Rudi",
+                "last_name": "Wijaya"
+            },
+            {
+                "first_name": "Agus",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Santoso"
+            },
+            {
+                "first_name": "Joko",
+                "last_name": "Pratama"
+            },
+            {
+                "first_name": "Rudi",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Joko",
+                "last_name": "Hidayat"
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Pratama"
+            },
+            {
+                "first_name": "Dewi",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Kurniawan"
+            },
+            {
+                "first_name": "Putri",
+                "last_name": "Saputra"
+            },
+            {
+                "first_name": "Rudi",
+                "last_name": "Santoso"
+            },
+            {
+                "first_name": "Sri",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Sri",
+                "last_name": "Pratama"
+            },
+            {
+                "first_name": "Nina",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Yanto",
+                "last_name": "Pratama"
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Wibowo"
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Suryono"
+            },
+            {
+                "first_name": "Andi",
+                "last_name": "Halim"
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Pratama"
+            },
+            {
+                "first_name": "Dewi",
+                "last_name": "Wijaya"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 28,
+        "title": "Departemen Padat Karyawan",
+        "difficulty": "Hard",
+        "description": "Tampilkan department_name dan emp_count untuk departemen yang memiliki lebih dari 5 karyawan.",
+        "query_hints": "SELECT d.department_name, COUNT(e.employee_id) as emp_count FROM departments d JOIN employees e ON d.department_id = e.department_id GROUP BY d.department_name HAVING COUNT(e.employee_id) > 5;",
+        "expected_json": [
+            {
+                "department_name": "Customer Support",
+                "emp_count": 11
+            },
+            {
+                "department_name": "Finance",
+                "emp_count": 16
+            },
+            {
+                "department_name": "HR",
+                "emp_count": 7
+            },
+            {
+                "department_name": "IT",
+                "emp_count": 11
+            },
+            {
+                "department_name": "Legal",
+                "emp_count": 13
+            },
+            {
+                "department_name": "Logistics",
+                "emp_count": 10
+            },
+            {
+                "department_name": "Marketing",
+                "emp_count": 9
+            },
+            {
+                "department_name": "Operations",
+                "emp_count": 11
+            },
+            {
+                "department_name": "R&D",
+                "emp_count": 6
+            },
+            {
+                "department_name": "Sales",
+                "emp_count": 6
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 29,
+        "title": "Nilai Pesanan per Kota",
+        "difficulty": "Hard",
+        "description": "Tampilkan city (dari address) dan total_city_amount (sum dari total_amount pesanan). Limit 10.",
+        "query_hints": "SELECT ca.city, SUM(o.total_amount) as total_city_amount FROM orders o JOIN customers c ON o.customer_id = c.customer_id JOIN customer_addresses ca ON c.customer_id = ca.customer_id GROUP BY ca.city LIMIT 10;",
+        "expected_json": [
+            {
+                "city": "Bandung",
+                "total_city_amount": 370853077.83
+            },
+            {
+                "city": "Denpasar",
+                "total_city_amount": 360911476.96
+            },
+            {
+                "city": "Jakarta",
+                "total_city_amount": 281121099.78
+            },
+            {
+                "city": "Makassar",
+                "total_city_amount": 386016254.6
+            },
+            {
+                "city": "Medan",
+                "total_city_amount": 371439834.08
+            },
+            {
+                "city": "Palembang",
+                "total_city_amount": 464720107.32
+            },
+            {
+                "city": "Semarang",
+                "total_city_amount": 233888846.63
+            },
+            {
+                "city": "Surabaya",
+                "total_city_amount": 359920922.83
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 30,
+        "title": "Supplier Elektronik",
+        "difficulty": "Hard",
+        "description": "Tampilkan DISTINCT company_name yang mensuplai produk dengan category_name = 'Electronics'.",
+        "query_hints": "SELECT DISTINCT s.company_name FROM suppliers s JOIN products p ON s.supplier_id = p.supplier_id JOIN product_categories c ON p.category_id = c.category_id WHERE c.category_name = 'Electronics';",
+        "expected_json": [
+            {
+                "company_name": "Supplier PT 17"
+            },
+            {
+                "company_name": "Supplier PT 21"
+            },
+            {
+                "company_name": "Supplier PT 19"
+            },
+            {
+                "company_name": "Supplier PT 5"
+            },
+            {
+                "company_name": "Supplier PT 30"
+            },
+            {
+                "company_name": "Supplier PT 9"
+            },
+            {
+                "company_name": "Supplier PT 11"
+            },
+            {
+                "company_name": "Supplier PT 18"
+            },
+            {
+                "company_name": "Supplier PT 15"
+            },
+            {
+                "company_name": "Supplier PT 13"
+            },
+            {
+                "company_name": "Supplier PT 27"
+            },
+            {
+                "company_name": "Supplier PT 28"
+            },
+            {
+                "company_name": "Supplier PT 7"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 31,
+        "title": "Ranking Harga Produk",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan product_name, category_id, price, dan rank_price (ranking harga tertinggi per kategori). (Gunakan RANK() OVER ...). Limit 10.",
+        "query_hints": "SELECT product_name, category_id, price, RANK() OVER (PARTITION BY category_id ORDER BY price DESC) as rank_price FROM products LIMIT 10;",
+        "expected_json": [
+            {
+                "product_name": "Product 128",
+                "category_id": 1,
+                "price": 3939698.65,
+                "rank_price": 1
+            },
+            {
+                "product_name": "Product 11",
+                "category_id": 1,
+                "price": 3890136.98,
+                "rank_price": 2
+            },
+            {
+                "product_name": "Product 55",
+                "category_id": 1,
+                "price": 3642912.86,
+                "rank_price": 3
+            },
+            {
+                "product_name": "Product 108",
+                "category_id": 1,
+                "price": 3536039.44,
+                "rank_price": 4
+            },
+            {
+                "product_name": "Product 116",
+                "category_id": 1,
+                "price": 3314375.16,
+                "rank_price": 5
+            },
+            {
+                "product_name": "Product 5",
+                "category_id": 1,
+                "price": 2828625.79,
+                "rank_price": 6
+            },
+            {
+                "product_name": "Product 170",
+                "category_id": 1,
+                "price": 2698121.35,
+                "rank_price": 7
+            },
+            {
+                "product_name": "Product 183",
+                "category_id": 1,
+                "price": 2695764.95,
+                "rank_price": 8
+            },
+            {
+                "product_name": "Product 57",
+                "category_id": 1,
+                "price": 2407521.12,
+                "rank_price": 9
+            },
+            {
+                "product_name": "Product 22",
+                "category_id": 1,
+                "price": 1071840.86,
+                "rank_price": 10
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 32,
+        "title": "Top 3 Gaji Tiap Departemen",
+        "difficulty": "Very Hard",
+        "description": "Gunakan CTE. Dapatkan first_name, department_id, base_salary yang masuk 3 besar gaji tertinggi di tiap departemen. Limit 15.",
+        "query_hints": "WITH RankedSalaries AS (SELECT e.first_name, e.department_id, s.base_salary, DENSE_RANK() OVER (PARTITION BY e.department_id ORDER BY s.base_salary DESC) as rank FROM employees e JOIN employee_salaries s ON e.employee_id = s.employee_id) SELECT first_name, department_id, base_salary FROM RankedSalaries WHERE rank <= 3 LIMIT 15;",
+        "expected_json": [
+            {
+                "first_name": "Ani",
+                "department_id": 1,
+                "base_salary": 19915567.58
+            },
+            {
+                "first_name": "Ani",
+                "department_id": 1,
+                "base_salary": 18105061.44
+            },
+            {
+                "first_name": "Agus",
+                "department_id": 1,
+                "base_salary": 17764353.17
+            },
+            {
+                "first_name": "Agus",
+                "department_id": 2,
+                "base_salary": 18079558.26
+            },
+            {
+                "first_name": "Eko",
+                "department_id": 2,
+                "base_salary": 17637478.32
+            },
+            {
+                "first_name": "Agus",
+                "department_id": 2,
+                "base_salary": 16435962.05
+            },
+            {
+                "first_name": "Ari",
+                "department_id": 3,
+                "base_salary": 19062845.09
+            },
+            {
+                "first_name": "Ari",
+                "department_id": 3,
+                "base_salary": 17329859.17
+            },
+            {
+                "first_name": "Rina",
+                "department_id": 3,
+                "base_salary": 16975680.58
+            },
+            {
+                "first_name": "Budi",
+                "department_id": 4,
+                "base_salary": 19447159.34
+            },
+            {
+                "first_name": "Joko",
+                "department_id": 4,
+                "base_salary": 19167330.79
+            },
+            {
+                "first_name": "Eko",
+                "department_id": 4,
+                "base_salary": 17960165.2
+            },
+            {
+                "first_name": "Dewi",
+                "department_id": 5,
+                "base_salary": 19819526.27
+            },
+            {
+                "first_name": "Ani",
+                "department_id": 5,
+                "base_salary": 19420551.33
+            },
+            {
+                "first_name": "Eko",
+                "department_id": 5,
+                "base_salary": 18908828.63
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 33,
+        "title": "Running Total Pembayaran",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan payment_date, amount, dan running_total (total kumulatif amount berdasarkan payment_date). Limit 15.",
+        "query_hints": "SELECT payment_date, amount, SUM(amount) OVER (ORDER BY payment_date) as running_total FROM payments ORDER BY payment_date LIMIT 15;",
+        "expected_json": [
+            {
+                "payment_date": "2023-01-18",
+                "amount": 10242923.56,
+                "running_total": 10242923.56
+            },
+            {
+                "payment_date": "2023-01-22",
+                "amount": 1534370.08,
+                "running_total": 11777293.64
+            },
+            {
+                "payment_date": "2023-02-06",
+                "amount": 1872672.33,
+                "running_total": 13649965.97
+            },
+            {
+                "payment_date": "2023-02-16",
+                "amount": 11159633.03,
+                "running_total": 24809599.0
+            },
+            {
+                "payment_date": "2023-03-03",
+                "amount": 4465978.01,
+                "running_total": 29275577.01
+            },
+            {
+                "payment_date": "2023-03-04",
+                "amount": 4489002.99,
+                "running_total": 33764580.0
+            },
+            {
+                "payment_date": "2023-03-08",
+                "amount": 2265031.9,
+                "running_total": 36029611.9
+            },
+            {
+                "payment_date": "2023-03-10",
+                "amount": 3991798.28,
+                "running_total": 40021410.18
+            },
+            {
+                "payment_date": "2023-04-02",
+                "amount": 6326536.26,
+                "running_total": 46347946.44
+            },
+            {
+                "payment_date": "2023-04-12",
+                "amount": 11378743.27,
+                "running_total": 57726689.71
+            },
+            {
+                "payment_date": "2023-04-14",
+                "amount": 4006441.94,
+                "running_total": 66590282.73
+            },
+            {
+                "payment_date": "2023-04-14",
+                "amount": 4857151.08,
+                "running_total": 66590282.73
+            },
+            {
+                "payment_date": "2023-04-17",
+                "amount": 2940894.93,
+                "running_total": 69531177.66
+            },
+            {
+                "payment_date": "2023-05-07",
+                "amount": 2807725.22,
+                "running_total": 72338902.88
+            },
+            {
+                "payment_date": "2023-05-19",
+                "amount": 6399160.5,
+                "running_total": 78738063.38
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 34,
+        "title": "Selisih Pesanan Sebelumnya",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan order_id, order_date, total_amount, dan prev_amount (total_amount dari pesanan sebelumnya berdasarkan order_date, gunakan LAG). Limit 15.",
+        "query_hints": "SELECT order_id, order_date, total_amount, LAG(total_amount) OVER (ORDER BY order_date) as prev_amount FROM orders LIMIT 15;",
+        "expected_json": [
+            {
+                "order_id": 15,
+                "order_date": "2023-01-11",
+                "total_amount": 7776774.65,
+                "prev_amount": null
+            },
+            {
+                "order_id": 105,
+                "order_date": "2023-01-12",
+                "total_amount": 8895972.15,
+                "prev_amount": 7776774.65
+            },
+            {
+                "order_id": 320,
+                "order_date": "2023-01-12",
+                "total_amount": 10242923.56,
+                "prev_amount": 8895972.15
+            },
+            {
+                "order_id": 416,
+                "order_date": "2023-01-14",
+                "total_amount": 1658243.15,
+                "prev_amount": 10242923.56
+            },
+            {
+                "order_id": 402,
+                "order_date": "2023-01-16",
+                "total_amount": 749082.21,
+                "prev_amount": 1658243.15
+            },
+            {
+                "order_id": 134,
+                "order_date": "2023-01-17",
+                "total_amount": 6393627.04,
+                "prev_amount": 749082.21
+            },
+            {
+                "order_id": 163,
+                "order_date": "2023-01-18",
+                "total_amount": 8685670.64,
+                "prev_amount": 6393627.04
+            },
+            {
+                "order_id": 294,
+                "order_date": "2023-01-19",
+                "total_amount": 1534370.08,
+                "prev_amount": 8685670.64
+            },
+            {
+                "order_id": 369,
+                "order_date": "2023-01-19",
+                "total_amount": 3901718.04,
+                "prev_amount": 1534370.08
+            },
+            {
+                "order_id": 343,
+                "order_date": "2023-01-22",
+                "total_amount": 6969088.31,
+                "prev_amount": 3901718.04
+            },
+            {
+                "order_id": 202,
+                "order_date": "2023-01-26",
+                "total_amount": 5878870.64,
+                "prev_amount": 6969088.31
+            },
+            {
+                "order_id": 46,
+                "order_date": "2023-01-30",
+                "total_amount": 1872672.33,
+                "prev_amount": 5878870.64
+            },
+            {
+                "order_id": 265,
+                "order_date": "2023-02-01",
+                "total_amount": 4362215.48,
+                "prev_amount": 1872672.33
+            },
+            {
+                "order_id": 75,
+                "order_date": "2023-02-02",
+                "total_amount": 5076406.39,
+                "prev_amount": 4362215.48
+            },
+            {
+                "order_id": 110,
+                "order_date": "2023-02-02",
+                "total_amount": 5977203.66,
+                "prev_amount": 5076406.39
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 35,
+        "title": "Selisih Pesanan Selanjutnya",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan order_id, order_date, total_amount, dan next_amount (total_amount pesanan selanjutnya berdasarkan order_date, gunakan LEAD). Limit 15.",
+        "query_hints": "SELECT order_id, order_date, total_amount, LEAD(total_amount) OVER (ORDER BY order_date) as next_amount FROM orders LIMIT 15;",
+        "expected_json": [
+            {
+                "order_id": 15,
+                "order_date": "2023-01-11",
+                "total_amount": 7776774.65,
+                "next_amount": 8895972.15
+            },
+            {
+                "order_id": 105,
+                "order_date": "2023-01-12",
+                "total_amount": 8895972.15,
+                "next_amount": 10242923.56
+            },
+            {
+                "order_id": 320,
+                "order_date": "2023-01-12",
+                "total_amount": 10242923.56,
+                "next_amount": 1658243.15
+            },
+            {
+                "order_id": 416,
+                "order_date": "2023-01-14",
+                "total_amount": 1658243.15,
+                "next_amount": 749082.21
+            },
+            {
+                "order_id": 402,
+                "order_date": "2023-01-16",
+                "total_amount": 749082.21,
+                "next_amount": 6393627.04
+            },
+            {
+                "order_id": 134,
+                "order_date": "2023-01-17",
+                "total_amount": 6393627.04,
+                "next_amount": 8685670.64
+            },
+            {
+                "order_id": 163,
+                "order_date": "2023-01-18",
+                "total_amount": 8685670.64,
+                "next_amount": 1534370.08
+            },
+            {
+                "order_id": 294,
+                "order_date": "2023-01-19",
+                "total_amount": 1534370.08,
+                "next_amount": 3901718.04
+            },
+            {
+                "order_id": 369,
+                "order_date": "2023-01-19",
+                "total_amount": 3901718.04,
+                "next_amount": 6969088.31
+            },
+            {
+                "order_id": 343,
+                "order_date": "2023-01-22",
+                "total_amount": 6969088.31,
+                "next_amount": 5878870.64
+            },
+            {
+                "order_id": 202,
+                "order_date": "2023-01-26",
+                "total_amount": 5878870.64,
+                "next_amount": 1872672.33
+            },
+            {
+                "order_id": 46,
+                "order_date": "2023-01-30",
+                "total_amount": 1872672.33,
+                "next_amount": 4362215.48
+            },
+            {
+                "order_id": 265,
+                "order_date": "2023-02-01",
+                "total_amount": 4362215.48,
+                "next_amount": 5076406.39
+            },
+            {
+                "order_id": 75,
+                "order_date": "2023-02-02",
+                "total_amount": 5076406.39,
+                "next_amount": 5977203.66
+            },
+            {
+                "order_id": 110,
+                "order_date": "2023-02-02",
+                "total_amount": 5977203.66,
+                "next_amount": 5547409.86
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 36,
+        "title": "Selisih dengan Rata Rata",
+        "difficulty": "Very Hard",
+        "description": "Hitung rata-rata gaji per departemen di CTE. Lalu join untuk menampilkan first_name, department_id, base_salary, dan diff_from_avg (base_salary - avg_sal). Limit 10.",
+        "query_hints": "WITH DeptAvg AS (SELECT department_id, AVG(base_salary) as avg_sal FROM employees e JOIN employee_salaries s ON e.employee_id = s.employee_id GROUP BY department_id) SELECT e.first_name, e.department_id, s.base_salary, ROUND((s.base_salary - d.avg_sal), 2) as diff_from_avg FROM employees e JOIN employee_salaries s ON e.employee_id = s.employee_id JOIN DeptAvg d ON e.department_id = d.department_id LIMIT 10;",
+        "expected_json": [
+            {
+                "first_name": "Yanto",
+                "department_id": 10,
+                "base_salary": 14791838.35,
+                "diff_from_avg": -33315.95
+            },
+            {
+                "first_name": "Andi",
+                "department_id": 8,
+                "base_salary": 16928165.03,
+                "diff_from_avg": 2422999.12
+            },
+            {
+                "first_name": "Andi",
+                "department_id": 8,
+                "base_salary": 18620981.53,
+                "diff_from_avg": 4115815.62
+            },
+            {
+                "first_name": "Putri",
+                "department_id": 6,
+                "base_salary": 10434571.58,
+                "diff_from_avg": -3074557.96
+            },
+            {
+                "first_name": "Putri",
+                "department_id": 6,
+                "base_salary": 11478028.74,
+                "diff_from_avg": -2031100.8
+            },
+            {
+                "first_name": "Rudi",
+                "department_id": 8,
+                "base_salary": 18378904.05,
+                "diff_from_avg": 3873738.14
+            },
+            {
+                "first_name": "Ari",
+                "department_id": 3,
+                "base_salary": 13545682.94,
+                "diff_from_avg": 1069192.11
+            },
+            {
+                "first_name": "Ari",
+                "department_id": 3,
+                "base_salary": 14900251.23,
+                "diff_from_avg": 2423760.4
+            },
+            {
+                "first_name": "Eko",
+                "department_id": 8,
+                "base_salary": 17384901.26,
+                "diff_from_avg": 2879735.35
+            },
+            {
+                "first_name": "Siti",
+                "department_id": 6,
+                "base_salary": 8341315.52,
+                "diff_from_avg": -5167814.02
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 37,
+        "title": "Tanggal Pesanan Pertama",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan customer_id, order_id, order_date, dan first_order_date (tanggal pesanan pertama pelanggan tsb) untuk semua pesanan. Limit 15.",
+        "query_hints": "SELECT customer_id, order_id, order_date, MIN(order_date) OVER (PARTITION BY customer_id) as first_order_date FROM orders ORDER BY customer_id, order_date LIMIT 15;",
+        "expected_json": [
+            {
+                "customer_id": 1,
+                "order_id": 76,
+                "order_date": "2024-06-27",
+                "first_order_date": "2024-06-27"
+            },
+            {
+                "customer_id": 1,
+                "order_id": 381,
+                "order_date": "2025-05-29",
+                "first_order_date": "2024-06-27"
+            },
+            {
+                "customer_id": 1,
+                "order_id": 242,
+                "order_date": "2025-09-29",
+                "first_order_date": "2024-06-27"
+            },
+            {
+                "customer_id": 2,
+                "order_id": 127,
+                "order_date": "2023-10-22",
+                "first_order_date": "2023-10-22"
+            },
+            {
+                "customer_id": 2,
+                "order_id": 406,
+                "order_date": "2024-02-19",
+                "first_order_date": "2023-10-22"
+            },
+            {
+                "customer_id": 2,
+                "order_id": 70,
+                "order_date": "2025-04-27",
+                "first_order_date": "2023-10-22"
+            },
+            {
+                "customer_id": 3,
+                "order_id": 398,
+                "order_date": "2025-05-24",
+                "first_order_date": "2025-05-24"
+            },
+            {
+                "customer_id": 3,
+                "order_id": 83,
+                "order_date": "2025-11-06",
+                "first_order_date": "2025-05-24"
+            },
+            {
+                "customer_id": 4,
+                "order_id": 289,
+                "order_date": "2023-04-25",
+                "first_order_date": "2023-04-25"
+            },
+            {
+                "customer_id": 4,
+                "order_id": 115,
+                "order_date": "2024-01-03",
+                "first_order_date": "2023-04-25"
+            },
+            {
+                "customer_id": 4,
+                "order_id": 478,
+                "order_date": "2025-03-18",
+                "first_order_date": "2023-04-25"
+            },
+            {
+                "customer_id": 5,
+                "order_id": 352,
+                "order_date": "2023-05-30",
+                "first_order_date": "2023-05-30"
+            },
+            {
+                "customer_id": 5,
+                "order_id": 1,
+                "order_date": "2024-04-24",
+                "first_order_date": "2023-05-30"
+            },
+            {
+                "customer_id": 5,
+                "order_id": 394,
+                "order_date": "2024-11-04",
+                "first_order_date": "2023-05-30"
+            },
+            {
+                "customer_id": 7,
+                "order_id": 7,
+                "order_date": "2024-10-23",
+                "first_order_date": "2024-10-23"
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 38,
+        "title": "Kuartil Harga Produk",
+        "difficulty": "Very Hard",
+        "description": "Tampilkan product_name, price, dan quartile (nilai 1-4) mengelompokkan harga produk (NTILE). Limit 15.",
+        "query_hints": "SELECT product_name, price, NTILE(4) OVER (ORDER BY price) as quartile FROM products LIMIT 15;",
+        "expected_json": [
+            {
+                "product_name": "Product 89",
+                "price": 22576.48,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 162",
+                "price": 26453.65,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 31",
+                "price": 38492.2,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 152",
+                "price": 52389.04,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 83",
+                "price": 57959.96,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 99",
+                "price": 65999.31,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 21",
+                "price": 140665.06,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 91",
+                "price": 145474.01,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 125",
+                "price": 155155.38,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 20",
+                "price": 161843.97,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 102",
+                "price": 183445.31,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 9",
+                "price": 202538.13,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 68",
+                "price": 229248.65,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 157",
+                "price": 247154.56,
+                "quartile": 1
+            },
+            {
+                "product_name": "Product 29",
+                "price": 267809.76,
+                "quartile": 1
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 39,
+        "title": "Pelanggan Setia (>3 Pesanan)",
+        "difficulty": "Very Hard",
+        "description": "Gunakan CTE untuk mencari customer dengan pesanan > 3. Tampilkan first_name, last_name, order_count. Urut abjad nama. Limit 15.",
+        "query_hints": "WITH CustOrderCount AS (SELECT customer_id, COUNT(order_id) as order_count FROM orders GROUP BY customer_id) SELECT c.first_name, c.last_name, o.order_count FROM customers c JOIN CustOrderCount o ON c.customer_id = o.customer_id WHERE o.order_count > 3 ORDER BY c.first_name LIMIT 15;",
+        "expected_json": [
+            {
+                "first_name": "Agus",
+                "last_name": "Kurniawan",
+                "order_count": 5
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Wijaya",
+                "order_count": 5
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Santoso",
+                "order_count": 4
+            },
+            {
+                "first_name": "Ani",
+                "last_name": "Saputra",
+                "order_count": 4
+            },
+            {
+                "first_name": "Ari",
+                "last_name": "Kurniawan",
+                "order_count": 6
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Santoso",
+                "order_count": 5
+            },
+            {
+                "first_name": "Dedi",
+                "last_name": "Pratama",
+                "order_count": 5
+            },
+            {
+                "first_name": "Hadi",
+                "last_name": "Santoso",
+                "order_count": 7
+            },
+            {
+                "first_name": "Nina",
+                "last_name": "Pratama",
+                "order_count": 5
+            },
+            {
+                "first_name": "Putri",
+                "last_name": "Halim",
+                "order_count": 5
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Suryono",
+                "order_count": 4
+            },
+            {
+                "first_name": "Sari",
+                "last_name": "Pratama",
+                "order_count": 4
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Suryono",
+                "order_count": 5
+            },
+            {
+                "first_name": "Siti",
+                "last_name": "Kurniawan",
+                "order_count": 4
+            },
+            {
+                "first_name": "Sri",
+                "last_name": "Santoso",
+                "order_count": 4
+            }
+        ],
+        "solved": false
+    },
+    {
+        "id": 40,
+        "title": "Metode Pengiriman Favorit",
+        "difficulty": "Very Hard",
+        "description": "Gunakan CTE dan ROW_NUMBER untuk mencari metode kirim terbanyak (method_count) di setiap city. Tampilkan city, method_name, method_count. Limit 15.",
+        "query_hints": "WITH CityShipping AS (SELECT ca.city, m.method_name, COUNT(o.order_id) as method_count, ROW_NUMBER() OVER (PARTITION BY ca.city ORDER BY COUNT(o.order_id) DESC) as rn FROM orders o JOIN shipping_methods m ON o.method_id = m.method_id JOIN customers c ON o.customer_id = c.customer_id JOIN customer_addresses ca ON c.customer_id = ca.customer_id GROUP BY ca.city, m.method_name) SELECT city, method_name, method_count FROM CityShipping WHERE rn = 1 LIMIT 15;",
+        "expected_json": [
+            {
+                "city": "Bandung",
+                "method_name": "Economy",
+                "method_count": 19
+            },
+            {
+                "city": "Denpasar",
+                "method_name": "Standard",
+                "method_count": 20
+            },
+            {
+                "city": "Jakarta",
+                "method_name": "Standard",
+                "method_count": 17
+            },
+            {
+                "city": "Makassar",
+                "method_name": "Standard",
+                "method_count": 24
+            },
+            {
+                "city": "Medan",
+                "method_name": "International",
+                "method_count": 26
+            },
+            {
+                "city": "Palembang",
+                "method_name": "Economy",
+                "method_count": 23
+            },
+            {
+                "city": "Semarang",
+                "method_name": "Express",
+                "method_count": 19
+            },
+            {
+                "city": "Surabaya",
+                "method_name": "Standard",
+                "method_count": 20
+            }
+        ],
+        "solved": false
+    }
+]
