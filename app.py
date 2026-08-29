@@ -91,7 +91,7 @@ class DashboardFrame(ctk.CTkScrollableFrame):
         super().__init__(master)
         self.grid_columnconfigure((0, 1, 2, 3), weight=1)
         
-        title = ctk.CTkLabel(self, text="Dashboard Latihan SQL (Bento UI)", font=ctk.CTkFont(size=28, weight="bold"))
+        title = ctk.CTkLabel(self, text="Dashboard Latihan SQL", font=ctk.CTkFont(size=28, weight="bold"))
         title.grid(row=0, column=0, columnspan=4, pady=(20, 30))
         
         colors = {
